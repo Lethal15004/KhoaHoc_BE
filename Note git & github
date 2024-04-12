@@ -52,9 +52,13 @@ I. Git
 
         + git diff: Từ lúc ta đưa vào Repository thì khi chỉnh sửa gì nó sẽ biết được, mỗi lần đưa vào là reset lại mới
             ● Xem sự thay đổi của một file sau khi chỉnh sửa.
-            ● Điều kiện là file đó vẫn đang ở khu vực Working
+            ● Điều kiện là file đó vẫn đang ở khu vực Working -> nghĩa là chưa thêm vào Staging area mới sử dụng
         
         + gitk: 
             ● Mở giao diện đồ họa của GIT.
             ● Giúp ta nhìn lại lịch sử commit dễ hơn
             ● Hiển thị lịch sử commit, branch, tag, ...
+        
+        + git checkout -- ten_file: Từ lúc ta đưa vào Repository thì khi reset lại nó sẽ quay lại file cuối đưa vào Repository
+            ● Bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu
+            ● Áp dụng cho file đang ở vùng Working -> nghĩa là chưa thêm vào Staging area mới sử dụng
