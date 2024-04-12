@@ -53,3 +53,8 @@ I. Git
         + git diff: Từ lúc ta đưa vào Repository thì khi chỉnh sửa gì nó sẽ biết được, mỗi lần đưa vào là reset lại mới
             ● Xem sự thay đổi của một file sau khi chỉnh sửa.
             ● Điều kiện là file đó vẫn đang ở khu vực Working
+        
+        + gitk: 
+            ● Mở giao diện đồ họa của GIT.
+            ● Giúp ta nhìn lại lịch sử commit dễ hơn
+            ● Hiển thị lịch sử commit, branch, tag, ...
