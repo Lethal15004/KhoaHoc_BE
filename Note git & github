@@ -10,24 +10,38 @@ I. Git
     - Chuyển file từ Staging area sang Repository sử dụng lệnh commit
     
     * Lệnh không quá quan trọng
-        + git --version: Kiểm tra phiên bản của git 
+        + git --version: 
+            ● Xem phiên bản GIT hiện tại đang được cài trên máy tính.
+        + clear: 
+            ● Xóa màn hình terminal.
     * Các lệnh quan trọng:
 
-        + git init: Là lệnh giúp tạo 1 Repository trong 1 project nào mà ta muốn, giúp lưu trữ các phiên bản của code
+        + git init: 
+            ● Khởi tạo repository (kho lưu trữ) cho dự án.
+            ● Chạy câu lệnh trong thư mục gốc của dự án.
 
-        + git status: Là lệnh thực hiện trong vùng Working directory và Staging area, giúp kiểm tra xem file nào đã
-                      được thêm, sửa, xóa trong Staging area. Có kiểm tra file trong Repository nếu có file trong đó
-            -> Màu đỏ: file đang ở Working directory
-                + Nếu là Changes not staged for commit: file trong Working đã bị chỉnh sửa so với file đã có trong Staging area
-                + Nếu là Untracked files: file chưa được thêm vào Staging area 
-            -> Màu xanh: file đã được thêm vào Staging area (Trong Staging area)
+        + git status: 
+            ● Là lệnh thực hiện trong vùng Working directory và Staging area, giúp kiểm tra xem file nào đã
+            được thêm, hoặc sửa trong Staging area. Có kiểm tra file trong Repository nếu có file trong đó.
+            ● Để xem trạng thái của những file đã được thay đổi trong dự án.
+                -> Màu đỏ: file đang ở Working directory
+                    + Nếu là Changes not staged for commit: file trong Working đã bị chỉnh sửa so với file đã có trong Staging area
+                    + Nếu là Untracked files: file chưa được thêm vào Staging area 
+                -> Màu xanh: file đã được thêm vào Staging area (Trong Staging area)
 
-        + git add ten_File hoặc git add . : Là lệnh thêm file từ Working directory sang Staging area, 
-                                            Nếu có rồi nó sẽ ghi đè lên file cũ trước đó
-            -> git add ten_File: Thêm 1 file vào Staging area
-            -> git add .: Thêm tất cả các file trong Working directory vào Staging area
+        + git add ten_File hoặc git add . : 
+            ● Chuyển các file đã thay đổi từ vùng Working sang vùng Staging. Nếu có rồi nó sẽ ghi đè lên file cũ trước đó
+            ● Staging area có tác dụng sắp xếp lại những file đã thêm vào
+                -> git add ten_File: Thêm 1 file vào Staging area
+                -> git add .: Thêm tất cả các file trong Working directory vào Staging area
 
-        + git commit -m"Nội dung": Là lệnh thêm file từ Staging area sang Repository
-                                   nếu đã có file trong Repository thì nó sẽ ghi đè file đó từ Staging area
+        + git commit -m"Nội dung": 
+            ● Chuyển các file từ vùng Staging sang vùng Repository 
+              nếu đã có file trong Repository thì nó sẽ ghi đè file đó từ Staging area.
+            ● Repository có tác dụng tạo ra 1 phiên bản mới.
             * Chú ý :   "Nội dung" phải là nội dung mô tả về việc thêm file đó vào Repository
                         Khi thực hiện commit thì chuyển tất cả file trong Staging area sang Repository
+        + git log :
+            ● Xem lại lịch sử các commit mà ta đã thực hiện
+            ● Commit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới.
+            ● Mỗi commit sẽ có 1 mã hash riêng biệt. Example: commit 35f1ea24dacf3c0de7d6813ea49b97577189aff2(id_commit)
