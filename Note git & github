@@ -1,0 +1,28 @@
+I. Git
+    - Git là một chương trình chạy trong máy để lưu trữ các phiên bản của 1 project nào đó, dễ kiểm soát code và 
+      backup nếu xảy ra lỗi hoặc vấn đề không xử lý kịp
+    - Git gồm có 3 vùng là : 
+        + Working directory : là vùng làm việc trong project, xử lý thêm, sửa và xóa code trong các file
+        + Staging area      : là vùng trung gian hay gọi là vùng sắp xếp, nó nằm giữa 2 vùng Working và Repository giúp 
+                              sắp xếp những file được thêm vào
+        + Repository        : là vùng lưu trữ các đoạn code sau khi đã hoàn tất việc chỉnh sửa trong vùng staging area
+    - Chuyển file từ Working directory sang Staging area ta sử dụng add
+    - Chuyển file từ Staging area sang Repository sử dụng lệnh commit
+    
+    * Lệnh không quá quan trọng
+        + git --version: Kiểm tra phiên bản của git 
+    * Các lệnh quan trọng:
+
+        + git init: Là lệnh giúp tạo 1 Repository trong 1 project nào mà ta muốn, giúp lưu trữ các phiên bản của code
+
+        + git status: Là lệnh thực hiện trong vùng Working directory và Staging area, giúp kiểm tra xem file nào đã
+                      được thêm, sửa, xóa trong Staging area
+            -> Màu đỏ: File đang ở Working directory
+                + Nếu là Changes not staged for commit: File chưa được thêm vào Staging area 
+                + Nếu là Untracked files: File trong Working đã bị chỉnh sửa so với File đã có trong Staging area
+            -> Màu xanh: File đã được thêm vào Staging area (Trong Staging area)
+
+        + git add ten_File hoặc git add . : Là lệnh thêm file từ Working directory sang Staging area, 
+                                            Nếu có rồi nó sẽ ghi đè lên file cũ trước đó
+            -> git add ten_File: Thêm 1 file vào Staging area
+            -> git add .: Thêm tất cả các file trong Working directory vào Staging area
