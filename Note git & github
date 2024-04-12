@@ -26,6 +26,7 @@ I. Git
                                             Nếu có rồi nó sẽ ghi đè lên file cũ trước đó
             -> git add ten_File: Thêm 1 file vào Staging area
             -> git add .: Thêm tất cả các file trong Working directory vào Staging area
+            
         + git commit -m"Nội dung": Là lệnh thêm file từ Staging area sang Repository
                                    nếu đã có file trong Repository thì nó sẽ ghi đè file đó từ Staging area
             * Chú ý :   "Nội dung" phải là nội dung mô tả về việc thêm file đó vào Repository
