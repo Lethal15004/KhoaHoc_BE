@@ -17,12 +17,16 @@ I. Git
 
         + git status: Là lệnh thực hiện trong vùng Working directory và Staging area, giúp kiểm tra xem file nào đã
                       được thêm, sửa, xóa trong Staging area
-            -> Màu đỏ: File đang ở Working directory
-                + Nếu là Changes not staged for commit: File chưa được thêm vào Staging area 
-                + Nếu là Untracked files: File trong Working đã bị chỉnh sửa so với File đã có trong Staging area
-            -> Màu xanh: File đã được thêm vào Staging area (Trong Staging area)
+            -> Màu đỏ: file đang ở Working directory
+                + Nếu là Changes not staged for commit: file chưa được thêm vào Staging area 
+                + Nếu là Untracked files: file trong Working đã bị chỉnh sửa so với file đã có trong Staging area
+            -> Màu xanh: file đã được thêm vào Staging area (Trong Staging area)
 
         + git add ten_File hoặc git add . : Là lệnh thêm file từ Working directory sang Staging area, 
                                             Nếu có rồi nó sẽ ghi đè lên file cũ trước đó
             -> git add ten_File: Thêm 1 file vào Staging area
             -> git add .: Thêm tất cả các file trong Working directory vào Staging area
+        + git commit -m"Nội dung": Là lệnh thêm file từ Staging area sang Repository
+                                   nếu đã có file trong Repository thì nó sẽ ghi đè file đó từ Staging area
+            * Chú ý :   "Nội dung" phải là nội dung mô tả về việc thêm file đó vào Repository
+                        Khi thực hiện commit thì chuyển tất cả file trong Staging area sang Repository
