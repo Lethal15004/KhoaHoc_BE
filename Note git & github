@@ -69,3 +69,8 @@ I. Git
         + git reset --soft commit_id
             ● Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit.
             ● Tức là từ Repository về lại Staging
+            ● Chú ý : Lệnh này chỉ lấy các commit_id sau commit_id mới nhất ta mới dùng
+        + git reset --mixed commit_id
+            ● Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git add.
+            ● Tức là từ Repository về lại Working.
+              ● Chú ý : Lệnh này chỉ lấy các commit_id sau commit_id mới nhất ta mới dùng
