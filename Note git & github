@@ -66,3 +66,6 @@ I. Git
         + git reset ten_file:
             ● Chuyển file đó từ vùng Staging trở lại vùng Working
             ● Áp dụng cho file đang ở vùng Staging -> nghĩa là đã thêm vào Staging area mới sử dụng
+        + git reset --soft commit_id
+            ● Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit.
+            ● Tức là từ Repository về lại Staging
