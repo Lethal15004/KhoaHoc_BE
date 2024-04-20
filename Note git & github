@@ -62,3 +62,7 @@ I. Git
         + git checkout -- ten_file: Từ lúc ta đưa vào Repository thì khi reset lại nó sẽ quay lại file cuối đưa vào Repository
             ● Bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu (So sánh 2 file ở Working directory và Repository)
             ● Áp dụng cho file đang ở vùng Working -> nghĩa là chưa thêm vào Staging area mới sử dụng
+
+        + git reset ten_file:
+            ● Chuyển file đó từ vùng Staging trở lại vùng Working
+            ● Áp dụng cho file đang ở vùng Staging -> nghĩa là đã thêm vào Staging area mới sử dụng
