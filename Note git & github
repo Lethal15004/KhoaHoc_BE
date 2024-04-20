@@ -82,7 +82,11 @@ I. Git
             + git branch: 
                 ● Xem tất cả các nhánh đang có trong dự án.
                 ● Nhánh nào có dấu * và màu xanh là nhánh đang được sử dụng.
+                
             + git branch -b ten_nhanh: 
                 ● Tạo ra 1 nhánh mới trong dự án.
                 ● Khi tạo ra 1 nhánh mới thì nó sẽ copy toàn bộ code từ nhánh hiện tại sang nhánh mới.
-                ● Chú ý: Nếu ta tạo file mới ở nhánh mới thì khi quay lại nhánh chính thì file đó sẽ mất
+                ● Chú ý: Nếu ta tạo file mới và thêm nó vào repository ở nhánh mới thì khi quay lại nhánh chính thì file đó sẽ mất
+            
+            + git checkout ten_nhanh:
+                ● Chuyển sang nhánh khác.
